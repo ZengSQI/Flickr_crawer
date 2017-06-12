@@ -16,12 +16,14 @@ uids = []
 for i in range(8):
     os.makedirs('./train_folder' + str(i+1), exist_ok=True)
 
+
 def loadData():
     f = open('./t1_train_image_link.txt')
     ef = open('./error_list.txt', 'w')
     ef.write('')
     datas = f.readlines()
     size = len(datas)
+    print(size)
     for i, li in enumerate(datas):
         print("processing {0} / {1}".format(i+1, size))
         uid = re.search(r'https://www.flickr.com/photos/(\w+@\w+)/\d+', li).group(1)
