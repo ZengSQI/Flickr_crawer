@@ -3,8 +3,8 @@ import untangle
 import re
 from pyquery import PyQuery as pq
 
-api_key = "1079cc75c0dc132799da40256e42011a"
-secret = "5bbdc1b5907307d7"
+api_key = "Enter your API KEY"
+secret = "SECRET"
 
 for i in range(8):
     os.makedirs('./train_folder' + str(i+1), exist_ok=True)
